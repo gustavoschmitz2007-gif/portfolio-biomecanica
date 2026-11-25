@@ -10,9 +10,10 @@ O site é uma página única (`index.html`), feita para publicar com o GitHub Pa
 2. Análise qualitativa do movimento
 3. Prática na academia: situação-problema (agachamento livre)
 4. Cinética: forças, alavancas e torque
+5. Prática: análise de torque (elevação lateral e agachamento)
 
 ## Organização
 
 - `index.html`: o portfólio
 - `img/`: imagens de apoio (as marcadas como "slide da aula" são do material da disciplina)
-- Fotos e vídeos das aulas entram na raiz ou em `img/`, com o nome da aula (por exemplo `aula3-01.jpg`)
+- `midia/`: fotos, vídeos e roteiros das aulas, com o nome da aula (por exemplo `aula5-agachamento-90.mp4`)
