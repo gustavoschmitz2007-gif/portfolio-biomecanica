@@ -144,6 +144,8 @@ figure.shot img{padding:.5rem}
 figcaption{font-size:.93rem;color:var(--lapis);margin-top:.5rem;line-height:1.45}
 figcaption::before{counter-increment:fig;content:"Figura " counter(fig) ". ";font-weight:600;color:var(--grafite)}
 .vid{max-width:320px}
+figure.vid video{aspect-ratio:9/16;object-fit:cover}
+.vlink{display:block;margin-top:.3rem;font-weight:600}
 .slot{border:1.5px dashed var(--pauta);padding:1.4rem 1.1rem;color:var(--lapis)}
 
 footer{max-width:calc(var(--mw) + var(--gap) + 46rem);margin:4rem auto 0;padding:1.5rem 1.5rem 3.5rem;color:var(--lapis);font-size:.93rem;
@@ -181,6 +183,8 @@ footer p{grid-column:2;margin:0;max-width:66ch}
 @media (max-width:820px){
   svg .lapis-t,svg .vermelho-t{font-size:24px}
   table{min-width:0;font-size:.95rem}
+  td.n{white-space:normal}
+  .vid{max-width:none}
 }
 @media print{main::before{display:none}.experimento{display:none}}
 /* tela cheia, sem margem vermelha */
@@ -570,8 +574,8 @@ main::before{display:none!important}
 <h3>Filmagens e fotos</h3>
 <p>Nos vídeos, a colega segura o halter na posição enquanto o grupo mede com a fita a distância entre a articulação e a carga.</p>
 <div class="media">
-<figure class="vid"><video controls playsinline preload="metadata" poster="midia/aula5-agachamento-90-capa.jpg" src="midia/aula5-agachamento-90.mp4"></video><figcaption><b>Agachamento a 90°.</b> Medição do braço de alavanca: 0,52 m.</figcaption></figure>
-<figure class="vid"><video controls playsinline preload="metadata" poster="midia/aula5-agachamento-amplitude-maxima-capa.jpg" src="midia/aula5-agachamento-amplitude-maxima.mp4"></video><figcaption><b>Agachamento na amplitude máxima.</b> Com a descida maior, o braço de alavanca passou para 0,70 m.</figcaption></figure>
+<figure class="vid"><video controls playsinline preload="metadata" width="540" height="960" poster="midia/aula5-agachamento-90-capa.jpg"><source src="midia/aula5-agachamento-90.mp4" type="video/mp4"><a href="midia/aula5-agachamento-90.mp4">Abrir o vídeo</a></video><figcaption><b>Agachamento a 90°.</b> Medição do braço de alavanca: 0,52 m. <a class="vlink" href="midia/aula5-agachamento-90.mp4" target="_blank" rel="noopener">Abrir o vídeo em outra aba</a></figcaption></figure>
+<figure class="vid"><video controls playsinline preload="metadata" width="540" height="960" poster="midia/aula5-agachamento-amplitude-maxima-capa.jpg"><source src="midia/aula5-agachamento-amplitude-maxima.mp4" type="video/mp4"><a href="midia/aula5-agachamento-amplitude-maxima.mp4">Abrir o vídeo</a></video><figcaption><b>Agachamento na amplitude máxima.</b> Com a descida maior, o braço de alavanca passou para 0,70 m. <a class="vlink" href="midia/aula5-agachamento-amplitude-maxima.mp4" target="_blank" rel="noopener">Abrir o vídeo em outra aba</a></figcaption></figure>
 </div>
 
 <h3>Reflexão</h3>
