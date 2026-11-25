@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Portfólio de Biomecânica</title>
+<meta name="description" content="Portfólio da disciplina de Biomecânica, Terapia Ocupacional, UNIDAVI: registro das aulas, atividades e práticas.">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F5F1E4;--surface:#FFFFFF;--ink:#152332;--muted:#5C6773;--line:#E2D9C4;--navy:#122B3D;--coral:#E1654B;--mustard:#DDA22F;--mint:#2E8B7E;
+--coral-soft:#F4DACE;--mustard-soft:#F3E2BC;--mint-soft:#D2E9E2;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#12181D;--surface:#1B2329;--ink:#EEF1F3;--muted:#9DA8B0;--line:#2C363D;--navy:#0B1620;--coral:#F0876C;--mustard:#F0BD5C;--mint:#5FC3B3;--coral-soft:#2E241E;--mustard-soft:#2E2A1A;--mint-soft:#172B27}}
+:root[data-theme="dark"]{--bg:#12181D;--surface:#1B2329;--ink:#EEF1F3;--muted:#9DA8B0;--line:#2C363D;--navy:#0B1620;--coral:#F0876C;--mustard:#F0BD5C;--mint:#5FC3B3;--coral-soft:#2E241E;--mustard-soft:#2E2A1A;--mint-soft:#172B27}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 52px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.03rem/1.65 "Inter",system-ui,sans-serif}
+h1,h2,h3{font-family:"Plus Jakarta Sans","Inter",system-ui,sans-serif;line-height:1.15;margin:0;font-weight:800;letter-spacing:-.01em}
+.wrap{max-width:840px;margin:0 auto;padding:0 22px}
+header{background:var(--navy);color:#F4EFE2;position:relative;overflow:hidden;
+background-image:linear-gradient(rgba(244,239,226,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(244,239,226,.055) 1px,transparent 1px);
+background-size:34px 34px}
+header .wrap{padding:40px 22px 34px;position:relative;z-index:2}
+.kicker{display:inline-flex;align-items:center;gap:8px;background:var(--coral);color:#241209;font:700 .72rem "Plus Jakarta Sans",sans-serif;text-transform:uppercase;letter-spacing:.08em;padding:6px 14px;border-radius:999px;margin-bottom:16px}
+.byline{font:700 .95rem "Plus Jakarta Sans",sans-serif;color:#EEE7D6;margin:2px 0 0;letter-spacing:.01em}
+h1{font-size:clamp(1.7rem,5vw,2.5rem);color:#FBF7EC}
+h1 em{font-style:normal;color:var(--coral)}
+.sub{color:#C3CDD6;margin:14px 0 0;max-width:56ch;font-size:1rem}
+.hero-art{position:absolute;right:-40px;top:-30px;width:280px;height:280px;opacity:.9;z-index:1;pointer-events:none}
+@media (max-width:720px){.hero-art{width:180px;height:180px;right:-50px;top:-20px;opacity:.55}}
+nav{position:sticky;top:env(safe-area-inset-top,0px);background:var(--navy);border-bottom:1px solid rgba(244,239,226,.14);z-index:5}
+nav .wrap{display:flex;gap:4px;overflow-x:auto;padding-top:12px;padding-bottom:12px}
+nav a{white-space:nowrap;color:#B7C2CB;text-decoration:none;padding:6px 13px;border-radius:999px;font-weight:600;font-size:.85rem;font-family:"Plus Jakarta Sans",sans-serif}
+nav a:hover,nav a:focus-visible{background:rgba(244,239,226,.1);color:#FBF7EC}
+nav a.off{color:var(--muted);font-weight:400}
+section{padding:46px 0 8px}
+h2{font-size:1.65rem;color:var(--ink)}
+h3{font-size:.78rem;margin:26px 0 10px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);font-family:"Plus Jakarta Sans",sans-serif;font-weight:700}
+.eyebrow{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+.eyebrow .num{flex:none;width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font:800 .95rem "Plus Jakarta Sans",sans-serif;background:var(--accent,var(--coral));color:#1B0E07}
+.eyebrow .lbl{font:700 .82rem "Plus Jakarta Sans",sans-serif;text-transform:uppercase;letter-spacing:.08em;color:var(--accent,var(--coral))}
+.eyebrow i{flex:1;height:1px;background:var(--line);font-style:normal}
+p{margin:8px 0;max-width:70ch}
+.box{background:var(--accent-soft,var(--soft));border:none;border-radius:14px;padding:18px 22px;margin:18px 0}
+.box p{margin:4px 0}
+.tw{overflow-x:auto;margin:10px 0;border-radius:14px;background:var(--surface);box-shadow:0 0 0 1px var(--line)}
+table{border-collapse:collapse;width:100%;min-width:600px;font-size:.93rem}
+th,td{text-align:left;padding:11px 15px;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:transparent;font-weight:700;color:var(--muted);text-transform:uppercase;font-size:.72rem;letter-spacing:.05em;font-family:"Plus Jakarta Sans",sans-serif}
+tr:last-child td{border-bottom:0}
+td.n{font-weight:700;white-space:nowrap}
+details{background:var(--surface);border-radius:14px;margin:10px 0;box-shadow:0 0 0 1px var(--line)}
+summary{cursor:pointer;padding:14px 20px;font-weight:700;font-family:"Plus Jakarta Sans",sans-serif;font-size:.92rem}
+summary:focus-visible{outline:2px solid var(--coral)}
+details>div{padding:0 20px 16px}
+details li{margin:4px 0}
+.media{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin:14px 0}
+.divider{max-width:840px;margin:6px auto 0;padding:0}
+.divider .bar{background:var(--navy);color:#EEE7D6;display:flex;align-items:center;justify-content:space-between;gap:14px;padding:12px 22px;font-family:"Plus Jakarta Sans",sans-serif}
+.divider .tag{font:700 .72rem "Plus Jakarta Sans",sans-serif;text-transform:uppercase;letter-spacing:.08em;color:#B7C2CB;white-space:nowrap}
+.divider .track{flex:1;height:4px;background:rgba(244,239,226,.16);border-radius:4px;overflow:hidden;max-width:220px}
+.divider .fill{height:100%;background:var(--coral);border-radius:4px}
+.divider .next{font:700 .72rem "Plus Jakarta Sans",sans-serif;text-transform:uppercase;letter-spacing:.06em;color:var(--coral);white-space:nowrap}
+figure{margin:0}figure img,figure video{width:100%;height:auto;display:block;border-radius:12px;background:#000}.vid{max-width:340px}figcaption{color:var(--muted);font-size:.86rem;margin-top:7px}.slot{border:1.5px dashed var(--line);border-radius:12px;padding:20px 16px;color:var(--muted);min-height:130px;display:flex;flex-direction:column;justify-content:center;background:var(--surface)}
+.slot b{color:var(--ink)}
+.slot small{display:block;margin-top:6px}
+ul.tight{padding-left:20px;margin:8px 0}
+.pdf-pages{display:flex;flex-direction:column;gap:8px;background:var(--surface);border-radius:14px;padding:8px;box-shadow:0 0 0 1px var(--line)}
+.pdf-pages img{width:100%;height:auto;display:block;border-radius:8px}
+.ex-icons{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:18px 0 20px}
+@media(max-width:640px){.ex-icons{grid-template-columns:repeat(2,1fr)}}
+.ex-icons figure{margin:0;background:var(--surface);border-radius:14px;padding:10px 6px 12px;text-align:center;box-shadow:0 0 0 1px var(--line)}
+.ex-icons svg{width:64px;height:56px;display:block;margin:0 auto}
+.ex-icons figcaption{margin-top:6px;font-size:.78rem;color:var(--muted);line-height:1.25}
+details>div p a{color:var(--mint);font-weight:700}
+footer{padding:36px 0 48px;color:var(--muted);font-size:.85rem;border-top:1px solid var(--line);margin-top:44px}
+.c1{--accent:var(--coral);--accent-soft:var(--coral-soft)}
+.c2{--accent:var(--mustard);--accent-soft:var(--mustard-soft)}
+.c3{--accent:var(--mint);--accent-soft:var(--mint-soft)}
+.cdark{--accent:var(--navy);--accent-soft:var(--surface)}
+.cdark .box{background:var(--navy);color:#F1EAD8}
+.cdark .box p{color:#F1EAD8}
+
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin:16px 0}
+.fact{background:var(--surface);border-radius:14px;padding:14px 16px;box-shadow:0 0 0 1px var(--line)}
+.fact b{display:block;font:800 1.05rem "Plus Jakarta Sans",sans-serif;color:var(--ink)}
+.fact span{color:var(--muted);font-size:.88rem;line-height:1.4;display:block;margin-top:4px}
+.fact .k{font:700 .68rem "Plus Jakarta Sans",sans-serif;text-transform:uppercase;letter-spacing:.08em;color:var(--accent,var(--coral));margin:0 0 6px}
+.formula{display:inline-block;font:800 1.15rem "Plus Jakarta Sans",sans-serif;background:var(--surface);color:var(--ink);padding:6px 14px;border-radius:10px;box-shadow:0 0 0 1px var(--line);margin:6px 0;letter-spacing:.02em}
+.shot{align-self:start;background:#fff;border-radius:14px;padding:12px;box-shadow:0 0 0 1px var(--line)}
+.shot img{border-radius:8px;background:#fff}
+.media.two{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.flow{list-style:none;padding:0;margin:16px 0;counter-reset:f}
+.flow>li{position:relative;background:var(--surface);border-radius:14px;padding:14px 18px 14px 58px;box-shadow:0 0 0 1px var(--line);margin:0 0 22px;counter-increment:f}
+.flow>li::before{content:counter(f);position:absolute;left:16px;top:13px;width:28px;height:28px;border-radius:50%;background:var(--accent,var(--coral));color:#1B0E07;font:800 .85rem "Plus Jakarta Sans",sans-serif;display:flex;align-items:center;justify-content:center}
+.flow>li:not(:last-child)::after{content:"";position:absolute;left:29px;bottom:-22px;width:2px;height:22px;background:var(--line)}
+.flow b{font-family:"Plus Jakarta Sans",sans-serif}
+.flow p{margin:4px 0 0;color:var(--muted);font-size:.93rem}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.chips span{font-size:.8rem;background:var(--accent-soft,var(--soft));color:var(--ink);padding:3px 10px;border-radius:999px}
+.flow .loop{border:1.5px dashed var(--accent,var(--coral));box-shadow:none;background:transparent}
+.note{border-left:3px solid var(--accent,var(--coral));padding:4px 0 4px 16px;margin:14px 0;color:var(--ink)}
+.note p{margin:4px 0}
+.calc{background:var(--surface);border-radius:14px;padding:16px 20px;box-shadow:0 0 0 1px var(--line);margin:14px 0}
+.calc p{margin:4px 0}
+.calc .r{font-weight:700;color:var(--accent,var(--coral))}
+.wip{background:var(--mustard-soft);border-radius:14px;padding:16px 20px;margin:18px 0}
+</style></head>
+<body>
+<header><div class="wrap">
+<svg class="hero-art" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<defs>
+<radialGradient id="glow" cx="50%" cy="45%" r="55%">
+<stop offset="0%" stop-color="#E1654B" stop-opacity=".55"/>
+<stop offset="55%" stop-color="#E1654B" stop-opacity=".18"/>
+<stop offset="100%" stop-color="#E1654B" stop-opacity="0"/>
+</radialGradient>
+</defs>
+<circle cx="205" cy="185" r="175" fill="url(#glow)"/>
+<g fill="none" stroke="#F4EFE2" stroke-width="10" stroke-linecap="round">
+<path d="M80 230 L330 230"/>
+</g>
+<path d="M150 236 L128 290 L172 290 Z" fill="#F4EFE2"/>
+<g fill="none" stroke="#7FD9C4" stroke-width="3" stroke-dasharray="2 8" stroke-linecap="round">
+<path d="M220 230 A70 70 0 0 0 150 160"/>
+</g>
+<g fill="none" stroke="#E1965A" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+<path d="M300 120 L300 212"/><path d="M286 196 L300 214 L314 196"/>
+</g>
+<circle cx="90" cy="230" r="14" fill="#F4EFE2"/>
+<g fill="#7FD9C4" opacity=".85">
+<circle cx="70" cy="120" r="4"/>
+<circle cx="340" cy="300" r="5"/>
+<circle cx="250" cy="70" r="4"/>
+</g>
+</svg>
+<span class="kicker">Terapia Ocupacional · UNIDAVI</span>
+<h1>Portfólio de Biomecânica</h1>
+<p class="byline">Gustavo Schmitz</p>
+<p class="sub">Registro das aulas da disciplina de Biomecânica com o professor Rafael Tanchela: o conteúdo de cada encontro, o que fizemos em grupo e os registros em foto e vídeo.</p>
+</div></header>
+
+<nav aria-label="Aulas"><div class="wrap">
+<a href="#aula1">Aula 1</a><a href="#aula2">Aula 2</a><a href="#aula3">Aula 3</a><a href="#aula4">Aula 4</a><a href="#andamento">Próximas aulas</a>
+</div></nav>
+
+<main class="wrap">
+
+<!-- ============================ AULA 1 ============================ -->
+<section id="aula1" class="c1">
+<div class="eyebrow"><span class="num">01</span><span class="lbl">Dia 1</span><i></i></div>
+<h2>Introdução à Biomecânica</h2>
+<p>Primeiro encontro da disciplina. O professor Rafael apresentou o plano de ensino, o laboratório onde serão feitas as aulas práticas e a forma de avaliação. Depois entramos no conteúdo: o que é a biomecânica e onde ela é aplicada.</p>
+
+<h3>Apresentação da disciplina</h3>
+<p>A disciplina junta mecânica, anatomia e fisiologia para analisar o movimento humano, com ênfase na análise cinética e cinemática. As aulas práticas acontecem no laboratório de musculação e biomecânica da Unidavi, que tem aparelhos de musculação, plataformas de força e recursos para análise do movimento.</p>
+<div class="facts">
+<div class="fact"><p class="k">Carga horária</p><b>30 h/a</b><span>Terapia Ocupacional</span></div>
+<div class="fact"><p class="k">Bloco 1</p><b>Cinética e prática</b><span>50% teórico e 50% prático: as forças no movimento e exercícios supervisionados em laboratório.</span></div>
+<div class="fact"><p class="k">Bloco 2</p><b>Análise por vídeo</b><span>100% prático: filmagem, análise e discussão de exercícios reais com ferramentas digitais.</span></div>
+</div>
+<p><b>Avaliação:</b> três notas com o mesmo peso. (1) criação de um site ou portfólio com o conteúdo de todas as aulas, de forma organizada e didática (é este aqui); (2) uma avaliação teórica; (3) um seminário final com a análise de exercícios usando as ferramentas vistas no semestre. Todas as aulas devem ser registradas, e a participação ativa conta na avaliação contínua.</p>
+
+<h3>Contexto: o que é a biomecânica</h3>
+<div class="box">
+<p><b>Biomecânica</b> é a ciência que aplica os princípios da mecânica ao estudo do movimento dos seres vivos. Ela combina física, anatomia e fisiologia para entender como as forças internas (músculos, ligamentos) e externas (gravidade, cargas, o chão) agem sobre o corpo, tanto parado quanto em movimento.</p>
+</div>
+<div class="media two">
+<div>
+<ul class="tight">
+<li><b>Mecânica:</b> estuda as forças que agem sobre os corpos e os efeitos que elas produzem.</li>
+<li><b>Estática:</b> o corpo em equilíbrio, parado ou em velocidade constante.</li>
+<li><b>Dinâmica:</b> o corpo em movimento acelerado.</li>
+<li><b>Cinemática:</b> descreve o movimento (posição, velocidade, aceleração) sem olhar para as forças.</li>
+<li><b>Cinética:</b> estuda as forças que causam o movimento.</li>
+</ul>
+<p>A biomecânica olha para a <b>estrutura</b> (ossos, articulações, músculos, tendões) e para a <b>função</b> (como essas estruturas se movem e suportam cargas), com aplicações clínicas, esportivas e ocupacionais.</p>
+</div>
+<figure class="shot"><img src="img/biomecanica-estrutura-funcao.png" alt="Esquema dos slides: biomecânica como a união da mecânica com a estrutura e a função do corpo"><figcaption>A biomecânica une a mecânica com a estrutura e a função do corpo (slide da aula).</figcaption></figure>
+</div>
+
+<h3>Onde a biomecânica atua</h3>
+<div class="facts">
+<div class="fact"><p class="k">Saúde espacial</p><b>NASA</b><span>Efeitos da microgravidade nos ossos e músculos e protocolos de exercício para astronautas.</span></div>
+<div class="fact"><p class="k">Reabilitação</p><b>Próteses</b><span>Próteses funcionais que reproduzem a biomecânica do membro e devolvem mobilidade.</span></div>
+<div class="fact"><p class="k">Trabalho</p><b>Biomecânica ocupacional</b><span>Postura e movimentos no trabalho para prevenir lesões, melhorar a ergonomia e a produtividade.</span></div>
+<div class="fact"><p class="k">Design</p><b>Equipamentos</b><span>Calçados, capacetes, implementos esportivos e roupas técnicas mais seguros e eficientes.</span></div>
+</div>
+<p><b>Biomecânica do esporte e desempenho:</b> analisa gestos esportivos para encontrar padrões eficientes, prevenir lesões e melhorar o rendimento. Ela atua em três frentes:</p>
+<ul class="tight">
+<li><b>Análise da técnica:</b> identificar desvios no padrão de movimento que tiram eficiência e aumentam o risco de lesão.</li>
+<li><b>Prevenção de lesões:</b> avaliar sobrecargas nas articulações e nos músculos para montar treinos mais seguros.</li>
+<li><b>Desempenho:</b> plataformas de força, eletromiografia e análise por vídeo para melhorar o rendimento.</li>
+</ul>
+<p><b>Referência da disciplina:</b> HALL, Susan J. <i>Biomecânica Básica</i>.</p>
+
+<h3>Reflexão</h3>
+<p>O que fica dessa aula: biomecânica não é só coisa de atleta. A área que mais conversa com a Terapia Ocupacional é a biomecânica ocupacional: olhar para a postura e os movimentos de uma pessoa no trabalho ou nas atividades do dia a dia, entender onde está a sobrecarga e adaptar a tarefa, o ambiente ou o equipamento para prevenir lesões.</p>
+</section>
+
+<div class="divider"><div class="bar wrap"><span class="tag">AULA 1 DE 4</span><span class="track"><span class="fill" style="width:25%"></span></span><span class="next">Próxima →</span></div></div>
+
+<!-- ============================ AULA 2 ============================ -->
+<section id="aula2" class="c2">
+<div class="eyebrow"><span class="num">02</span><span class="lbl">Dia 2</span><i></i></div>
+<h2>Análise qualitativa do movimento</h2>
+<p>Aula teórica sobre como analisar um movimento: a diferença entre análise qualitativa e quantitativa, a terminologia padrão, as ferramentas de medida e, principalmente, como planejar uma análise qualitativa passo a passo. Essa base foi usada logo depois na prática da academia.</p>
+
+<h3>Contexto: qualitativo × quantitativo</h3>
+<div class="facts">
+<div class="fact"><p class="k">Qualitativo</p><b>Sem números</b><span>Descreve o movimento com palavras: "bom", "rápido", "flexionado". Depende da observação e do julgamento de quem analisa.</span></div>
+<div class="fact"><p class="k">Quantitativo</p><b>Com valores</b><span>Expressa o movimento com medidas: "três metros", "cinquenta voltas". Precisa de instrumentos.</span></div>
+</div>
+<p>Na prática, a análise qualitativa é o ponto de partida de qualquer investigação biomecânica. Primeiro a gente observa e entende o que está acontecendo; depois, se precisar, mede.</p>
+
+<h3>Terminologia padrão: planos e eixos</h3>
+<p>Para descrever um movimento com precisão, todo mundo usa as mesmas referências anatômicas: posição anatômica, planos e eixos. O movimento acontece <b>no</b> plano e <b>em torno</b> do eixo, que é sempre perpendicular a ele.</p>
+<div class="tw"><table>
+<tr><th>Plano</th><th>Divide o corpo em</th><th>Eixo</th><th>Movimentos típicos</th></tr>
+<tr><td class="n">Sagital</td><td>direita e esquerda</td><td>látero-lateral</td><td>flexão e extensão</td></tr>
+<tr><td class="n">Frontal</td><td>anterior e posterior</td><td>ântero-posterior</td><td>abdução e adução</td></tr>
+<tr><td class="n">Transversal</td><td>superior e inferior</td><td>longitudinal</td><td>rotações</td></tr>
+</table></div>
+
+<h3>Unidades do SI usadas no movimento humano</h3>
+<div class="tw"><table>
+<tr><th>Grandeza</th><th>Unidade no SI</th><th>Grandeza</th><th>Unidade no SI</th></tr>
+<tr><td class="n">Massa</td><td>quilograma (kg)</td><td class="n">Energia</td><td>joule (J)</td></tr>
+<tr><td class="n">Distância</td><td>metro (m)</td><td class="n">Potência</td><td>watt (W)</td></tr>
+<tr><td class="n">Tempo</td><td>segundo (s)</td><td class="n">Velocidade</td><td>metros por segundo (m/s)</td></tr>
+<tr><td class="n">Força</td><td>newton (N)</td><td class="n">Torque</td><td>newton-metro (N·m)</td></tr>
+<tr><td class="n">Trabalho</td><td>joule (J)</td><td></td><td></td></tr>
+</table></div>
+
+<h3>Ferramentas para medir grandezas cinemáticas</h3>
+<ul class="tight">
+<li><b>Câmeras de alta velocidade:</b> captam detalhes do movimento e permitem ver quadro a quadro ações rápidas, como uma corrida ou um arremesso.</li>
+<li><b>Plataformas de força:</b> medem a força de reação do solo na marcha, na corrida e nos saltos.</li>
+<li><b>Marcadores articulares:</b> pontos reflexivos colados em referências anatômicas, usados na captura de movimento em 3D.</li>
+<li><b>Softwares de análise:</b> o Kinovea, por exemplo, permite marcar pontos no vídeo e calcular ângulos e velocidades.</li>
+<li><b>Acelerômetros:</b> sensores que medem a aceleração dos segmentos, úteis para avaliar impactos e vibrações.</li>
+<li><b>Dinamometria isocinética e digital:</b> avalia força, potência e resistência muscular e aponta desequilíbrios entre lados ou grupos musculares.</li>
+</ul>
+
+<h3>O que é preciso saber para analisar</h3>
+<ul class="tight">
+<li><b>Propósito específico:</b> definir o objetivo da análise orienta o que observar e como avaliar.</li>
+<li><b>Cinemática e técnica:</b> dominar as formas de movimento e a terminologia.</li>
+<li><b>Experiência prática:</b> quanto mais padrões de movimento a gente vê, mais fácil fica perceber um erro.</li>
+<li><b>Pesquisa e embasamento:</b> a literatura dá os parâmetros de referência para comparar o movimento observado.</li>
+</ul>
+
+<h3>Planejamento da análise qualitativa</h3>
+<p>O fluxograma visto em aula organiza a análise do começo ao fim. Refiz ele aqui em forma de etapas:</p>
+<ol class="flow">
+<li><b>Identificação da questão ou problema</b><p>O que eu quero descobrir sobre esse movimento?</p></li>
+<li><b>Tomada de decisões</b><p>Como vou observar.</p><div class="chips"><span>Ângulo de visão</span><span>Distância de visão</span><span>Roupas do executor</span><span>Modificações ambientais</span><span>Uso de vídeo</span></div></li>
+<li><b>Coleta de observações</b><p>De onde vêm as informações.</p><div class="chips"><span>Visual</span><span>Auditiva</span><span>Do executor</span><span>De outros analistas</span></div></li>
+<li><b>Interpretação das observações</b><p>Comparar o que vi com o padrão esperado e achar a causa do erro.</p></li>
+<li><b>Comunicação com o executor</b><p>Explicar o que corrigir de um jeito que a pessoa entenda.</p></li>
+<li class="loop"><b>Refinamento da questão ou análise final</b><p>Se ainda tiver dúvida, volta para a tomada de decisões e observa de novo. Se não, fecha a análise.</p></li>
+</ol>
+<p>Como exemplo, o professor mostrou análises prontas de rosca direta, de cadeira flexora, uma análise tática e uma análise de desenvolvimento.</p>
+
+<h3>Reflexão</h3>
+<p>O que fica dessa aula: dá pra fazer uma análise boa sem nenhum equipamento caro, desde que ela seja planejada. Escolher o ângulo e a distância certos já muda o que a gente consegue ver. Na Terapia Ocupacional isso é o dia a dia: observar um paciente fazendo uma atividade (se vestir, levantar da cadeira, alcançar um objeto) e entender onde está a dificuldade.</p>
+</section>
+
+<div class="divider"><div class="bar wrap"><span class="tag">AULA 2 DE 4</span><span class="track"><span class="fill" style="width:50%"></span></span><span class="next">Próxima →</span></div></div>
+
+<!-- ============================ AULA 3 ============================ -->
+<section id="aula3" class="c3">
+<div class="eyebrow"><span class="num">03</span><span class="lbl">Dia 3</span><i></i></div>
+<h2>Prática na academia: situação-problema</h2>
+<p>Aula prática na academia da Unidavi usando o roteiro "Análise qualitativa do movimento". A atividade teve duas etapas: primeiro cada grupo criou um caso de um exercício com algum erro de execução, e depois os grupos resolveram os casos, demonstrando o exercício e explicando a análise para a turma.</p>
+
+<h3>Como funcionou a atividade</h3>
+<ul class="tight">
+<li><b>Etapa 1, criação do caso:</b> o grupo escreve uma situação-problema com o perfil do praticante, a descrição da execução e uma pergunta-problema. O caso descreve o que acontece, mas não entrega a resposta nem aponta o erro.</li>
+<li><b>Etapa 2, resolução:</b> o grupo preenche a tomada de decisões e a coleta de observações (as mesmas etapas do fluxograma da aula 2) e explica na academia como chegou na resposta, com demonstração.</li>
+</ul>
+
+<h3>Nosso caso: agachamento livre</h3>
+<div class="box">
+<p><b>Perfil do praticante:</b> homem, 47 anos, um ano de experiência em musculação com personal trainer, mas está há seis meses sem treinar.</p>
+<p><b>Objetivo:</b> melhorar a execução do agachamento livre.</p>
+<p><b>Descrição da execução:</b> ele fica com os pés afastados na largura dos ombros e flexiona joelhos e quadris para descer. Durante a descida, os joelhos se aproximam um do outro, o tronco inclina bastante para a frente e os calcanhares começam a sair do chão. Na subida, tem dificuldade de manter a postura e o alinhamento dos joelhos.</p>
+<p><b>Pergunta-problema:</b> quais articulações e movimentos estão envolvidos no agachamento livre? Identifique planos e eixos, cadeia cinética, classificação quanto ao número de articulações e os músculos agonistas, antagonistas e sinergistas. Quais aspectos da execução precisam melhorar e como corrigir?</p>
+</div>
+
+<h3>Roteiro preenchido: tomada de decisões</h3>
+<div class="tw"><table>
+<tr><th>Item</th><th>Decisão do grupo</th></tr>
+<tr><td class="n">Ângulo / plano de visão</td><td>Lateral e frontal</td></tr>
+<tr><td class="n">Distância de visão</td><td>1,5 m</td></tr>
+<tr><td class="n">Roupas do executor</td><td>Bermuda e camiseta justas ao corpo</td></tr>
+<tr><td class="n">Modificações ambientais</td><td>Roupa contrastando com o ambiente para evidenciar o movimento</td></tr>
+</table></div>
+
+<h3>Roteiro preenchido: coleta de observações</h3>
+<div class="tw"><table>
+<tr><th>Item</th><th>Resposta do grupo</th></tr>
+<tr><td class="n">Movimentos articulares</td><td>Flexão e extensão de quadril, flexão e extensão de joelho, dorsiflexão e flexão plantar</td></tr>
+<tr><td class="n">Articulações envolvidas</td><td>Quadril, joelho e tornozelo. Coluna vertebral e cintura escapular servem de suporte e estabilização.</td></tr>
+<tr><td class="n">Plano e eixo</td><td>Plano sagital, eixo látero-lateral</td></tr>
+<tr><td class="n">CCA ou CCF</td><td>Cadeia cinética fechada (os pés ficam fixos no chão)</td></tr>
+<tr><td class="n">Mono ou multiarticular</td><td>Multiarticular</td></tr>
+<tr><td class="n">Agonistas</td><td>Quadríceps femoral, glúteo máximo</td></tr>
+<tr><td class="n">Antagonistas</td><td>Reto femoral, iliopsoas</td></tr>
+<tr><td class="n">Sinergistas</td><td>Isquiotibiais, adutor magno</td></tr>
+<tr><td class="n">Erro / alteração</td><td>Arqueamento da coluna lombar, joelhos flexionados para frente</td></tr>
+<tr><td class="n">Estratégia de correção</td><td>Manter as plantas dos pés no chão e corrigir o arqueamento excessivo da coluna lombar</td></tr>
+</table></div>
+
+<h3>Revendo o caso depois da aula</h3>
+<p>Relendo a descrição com calma, dá pra ligar cada sinal a uma causa provável e a uma correção. Esses pontos complementam o que o grupo respondeu no roteiro:</p>
+<div class="tw"><table>
+<tr><th>O que aparece</th><th>Plano</th><th>Causa provável</th><th>Como corrigir</th></tr>
+<tr><td class="n">Joelhos se aproximam (valgo dinâmico)</td><td>Frontal</td><td>Pouca ativação de abdutores e rotadores laterais do quadril (glúteo médio e máximo)</td><td>Pedir "joelhos na direção dos pés", miniband acima dos joelhos, fortalecer glúteo médio</td></tr>
+<tr><td class="n">Tronco muito inclinado à frente</td><td>Sagital</td><td>Pouca mobilidade de tornozelo, fraqueza de extensores do quadril e do tronco ou carga alta para quem está voltando</td><td>Reduzir a carga, usar agachamento com halter à frente do peito (goblet), trabalhar o core</td></tr>
+<tr><td class="n">Calcanhares saem do chão</td><td>Sagital</td><td>Dorsiflexão limitada (panturrilha encurtada)</td><td>Mobilidade de tornozelo e alongamento de panturrilha; no começo, reduzir a amplitude ou usar um calço baixo sob os calcanhares</td></tr>
+</table></div>
+<div class="note">
+<p><b>Por que olhar de lado e de frente:</b> a vista lateral mostra o que acontece no plano sagital (tronco e calcanhares), mas o joelho indo para dentro só aparece na vista frontal. Por isso a decisão de usar os dois ângulos foi importante.</p>
+<p><b>Músculos biarticulares:</b> o reto femoral cruza o quadril e o joelho. Ele ajuda a estender o joelho junto com o resto do quadríceps, mas também flexiona o quadril, que é o contrário do que o glúteo faz na subida. Com os isquiotibiais acontece o inverso: estendem o quadril e flexionam o joelho. Por isso esses músculos podem aparecer em papéis diferentes dependendo da articulação analisada.</p>
+</div>
+
+<h3>Filmagens e fotos</h3>
+<div class="media">
+<div class="slot"><b>Fotos e vídeos da aula</b><small>Aqui entram os registros da demonstração do agachamento na academia.</small></div>
+</div>
+
+<h3>Reflexão</h3>
+<p>O que fica dessa aula: criar o caso foi tão útil quanto resolver. Para escrever uma situação-problema sem entregar a resposta, a gente precisou entender bem o erro antes. E aplicar o fluxograma na prática mostrou que a tomada de decisões (de onde olhar, a que distância, com que roupa) muda muito o que dá pra enxergar. Na Terapia Ocupacional, o agachamento é a base de várias atividades do dia a dia, como sentar e levantar, pegar algo no chão ou usar o vaso sanitário, então saber corrigir esse padrão tem aplicação direta.</p>
+</section>
+
+<div class="divider"><div class="bar wrap"><span class="tag">AULA 3 DE 4</span><span class="track"><span class="fill" style="width:75%"></span></span><span class="next">Próxima →</span></div></div>
+
+<!-- ============================ AULA 4 ============================ -->
+<section id="aula4" class="c1">
+<div class="eyebrow"><span class="num">04</span><span class="lbl">Dia 4</span><i></i></div>
+<h2>Cinética: forças, alavancas e torque</h2>
+<p>Início do conteúdo de cinética. Se a cinemática descreve o movimento, a cinética explica por que ele acontece: quais forças agem sobre o corpo e o que elas provocam.</p>
+
+<h3>Contexto: o que é cinética</h3>
+<div class="box">
+<p><b>Cinética</b> é o ramo da física que estuda a ação das forças nas mudanças de movimento dos corpos. Ela responde perguntas como: por que um objeto acelera, desacelera ou gira quando uma força age sobre ele?</p>
+</div>
+
+<h3>Conceitos básicos</h3>
+<div class="facts">
+<div class="fact"><p class="k">Inércia</p><b>Resistir à mudança</b><span>Um corpo parado tende a continuar parado, e um corpo em movimento tende a continuar em movimento.</span></div>
+<div class="fact"><p class="k">Massa (m)</p><b>Quantidade de matéria</b><span>Medida em quilogramas (kg). Quanto maior a massa, maior a inércia.</span></div>
+<div class="fact"><p class="k">Força (F)</p><b>F = m × a</b><span>Grandeza vetorial que provoca aceleração. Unidade: newton, 1 N = 1 kg × 1 m/s².</span></div>
+<div class="fact"><p class="k">Centro de gravidade</p><b>Ponto de equilíbrio</b><span>Ponto onde o peso do corpo fica distribuído igualmente em todas as direções.</span></div>
+<div class="fact"><p class="k">Peso (P)</p><b>P = m × g</b><span>A força da gravidade sobre a massa. g = −9,81 m/s² (o sinal negativo indica que aponta para baixo).</span></div>
+<div class="fact"><p class="k">Pressão</p><b>P = F / A</b><span>Força por unidade de área. Mesma força em área maior gera menos pressão.</span></div>
+<div class="fact"><p class="k">Impulso (J)</p><b>J = F × t</b><span>Força multiplicada pelo tempo em que ela atua.</span></div>
+</div>
+<p>A relação 1 N = 1 kg × 1 m/s² é a base da Segunda Lei de Newton.</p>
+
+<h3>Braço de alavanca e torque</h3>
+<div class="media two">
+<div>
+<p><b>Braço de alavanca</b> é a distância perpendicular entre o ponto onde a força é aplicada e o eixo de rotação. Quanto maior o braço de alavanca, maior o efeito de giro produzido pela mesma força. É por isso que uma chave mais comprida facilita soltar um parafuso.</p>
+<p><b>Torque</b> é esse efeito de giro: mede o quanto uma força tende a girar um corpo em torno de um eixo. É proporcional à força e ao braço de alavanca.</p>
+<p><span class="formula">T = F × d⊥</span></p>
+<p>Onde d⊥ é a distância perpendicular entre a linha de ação da força e o eixo. Unidade: N·m.</p>
+</div>
+<figure class="shot"><img src="img/torque-chave.png" alt="Chave de boca girando uma porca: a força aplicada na ponta da chave e o braço de alavanca até o centro da porca geram o torque"><figcaption>A força na ponta da chave, multiplicada pelo braço de alavanca, gera o torque (slide da aula).</figcaption></figure>
+</div>
+
+<h3>Tipos de alavanca no corpo</h3>
+<p>No corpo, o osso funciona como a barra, a articulação como o eixo (fulcro, F), o músculo aplica a força potente (P) e o peso do segmento ou da carga é a resistência (R).</p>
+<figure class="shot"><img src="img/alavancas.png" alt="Os três tipos de alavanca no corpo: cabeça sobre a coluna cervical, elevação dos calcanhares e flexão do cotovelo"><figcaption>Da esquerda para a direita: interfixa, inter-resistente e interpotente (slide da aula).</figcaption></figure>
+<div class="tw"><table>
+<tr><th>Tipo</th><th>O que fica no meio</th><th>Exemplo no corpo</th></tr>
+<tr><td class="n">Interfixa (1ª classe)</td><td>O fulcro, entre a força e a resistência</td><td>Movimentos da cabeça sobre a coluna cervical</td></tr>
+<tr><td class="n">Inter-resistente (2ª classe)</td><td>A resistência, entre o fulcro e a força</td><td>Elevação dos calcanhares (ficar na ponta dos pés)</td></tr>
+<tr><td class="n">Interpotente (3ª classe)</td><td>A força, entre o fulcro e a resistência</td><td>Flexão do antebraço (cotovelo)</td></tr>
+</table></div>
+<p>A interpotente é a mais comum no corpo: o músculo se insere perto da articulação, então precisa fazer muita força, mas em troca o segmento ganha amplitude e velocidade na ponta.</p>
+
+<h3>Exemplo meu: segurar uma panela</h3>
+<div class="calc">
+<p>Uma panela de 2 kg segurada com o cotovelo a 90°. O peso é <b>P = 2 × 9,81 ≈ 19,6 N</b>.</p>
+<p>Com a panela na mão, a uns 0,35 m do cotovelo: <b>T = 19,6 × 0,35 ≈ 6,9 N·m</b>.</p>
+<p>Com a panela encostada perto do corpo, a uns 0,15 m: <b>T = 19,6 × 0,15 ≈ 2,9 N·m</b>.</p>
+<p class="r">Mesma panela, menos da metade do torque no cotovelo, só por diminuir o braço de alavanca.</p>
+</div>
+<p>É a mesma lógica das orientações de proteção articular na Terapia Ocupacional: carregar objetos perto do corpo diminui a sobrecarga nas articulações.</p>
+
+<h3>Como medir o torque nos cabos</h3>
+<div class="media two">
+<ol class="flow">
+<li><b>Identificar o fulcro ou eixo</b><p>Localizar com precisão o ponto de rotação da articulação analisada.</p></li>
+<li><b>Garantir 90° entre o cabo e o segmento</b><p>Com o cabo perpendicular ao segmento, toda a força vira torque. Em outros ângulos, parte da força se perde.</p></li>
+<li><b>Usar o goniômetro</b><p>Medir o ângulo articular para garantir o posicionamento certo no cálculo.</p></li>
+</ol>
+<figure class="shot"><img src="img/torque-cabo.png" alt="Exercício de extensão de quadril no cabo, com a tornozeleira presa ao cabo da polia"><figcaption>Extensão de quadril no cabo: o eixo é o quadril e a força entra pela tornozeleira (slide da aula).</figcaption></figure>
+</div>
+
+<h3>Filmagens e fotos</h3>
+<div class="media">
+<div class="slot"><b>Fotos e vídeos da aula</b><small>Aqui entram os registros da parte prática de cinética.</small></div>
+</div>
+
+<h3>Reflexão</h3>
+<p>O que fica dessa aula: o torque explica por que um mesmo peso parece mais leve ou mais pesado dependendo de onde está em relação à articulação. Os outros conceitos também têm uso direto na Terapia Ocupacional: a pressão (F/A) explica por que almofadas e assentos que distribuem o peso numa área maior ajudam a prevenir lesões por pressão em quem passa muito tempo sentado, e o impulso explica por que dobrar os joelhos ao aterrissar diminui o impacto: aumentar o tempo de contato reduz o pico de força.</p>
+</section>
+
+<section id="andamento" class="cdark">
+<h2>Próximas aulas</h2>
+<div class="box">
+<p>Este portfólio está em andamento e vai ser atualizado a cada aula. Ainda falta o restante do bloco de cinética e o bloco 2, de análise por vídeo, com filmagem e análise de exercícios usando ferramentas como o Kinovea.</p>
+</div>
+</section>
+</main>
+
+<footer><div class="wrap">Biomecânica, Terapia Ocupacional, UNIDAVI. Prof. Rafael Tanchela. Referência: HALL, Susan J. Biomecânica Básica. Imagens marcadas como "slide da aula" são do material da disciplina.</div></footer>
+</body>
+</html>
