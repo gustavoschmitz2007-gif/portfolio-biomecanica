@@ -183,6 +183,12 @@ footer p{grid-column:2;margin:0;max-width:66ch}
   table{min-width:0;font-size:.95rem}
 }
 @media print{main::before{display:none}.experimento{display:none}}
+/* tela cheia, sem margem vermelha */
+main::before{display:none!important}
+.rosto,main,footer{max-width:none!important;padding-left:clamp(1.25rem,5vw,5rem)!important;padding-right:clamp(1.25rem,5vw,5rem)!important}
+.aula p,.aula li{max-width:80ch}
+.resumo{max-width:60ch}
+.experimento .palco{max-width:900px}
 </style>
 </head>
 <body>
